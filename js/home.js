@@ -4,6 +4,10 @@
     if (!isTouch()) {
         gsap.registerPlugin(ScrollTrigger);
 
+        window.addEventListener('resize', ev => {
+            ScrollTrigger.refresh();
+        })
+
         // const header = document.querySelector('.header');
         // const clip = document.querySelector('.clipping-svg path');
         const clipPath = document.querySelector('.clipping-svg clipPath');
@@ -19,10 +23,10 @@
 
         gsap.to(clipPath, {
             // transform: 'scale(8.8) translate(-9000,-36em)',
-            transform: 'scale(8.8) translate(-71.5em,-36em)',
-            // scale: 8.8,
-            // xPercent: -9000,
-            // yPercent: -5000,
+            // transform: 'scale(8.8) translate(-71.5em,-36em)',
+            scale: 8.8,
+            xPercent: -540,
+            yPercent: -530,
             scrollTrigger: {
                 trigger: '.header',
                 endTrigger: '.productsSection',
