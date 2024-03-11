@@ -1,0 +1,160 @@
+.woocommerce .select2,
+.woocommerce-page .select2 {
+    &-hidden-accessible {
+        display: none;
+    }
+
+    &-search__field {
+        // display: none;
+        padding: 0.6em 1em;
+
+    }
+
+    &-container {
+        span {
+            // display: block;
+        }
+
+        .form__row & {
+            width: 100% !important;
+            // display: block;
+        }
+
+        &--open {
+            z-index: 1050;
+        }
+
+        &--default {
+            &.orderby {
+                min-width: 16.25em;
+
+                .select2-selection--single {
+                    border-color: #E9E7E7;
+                    background: #E9E7E7;
+                    height: auto;
+                }
+            }
+
+            .select2 {
+                &-results {
+                    &__options {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0.5em 0;
+                        max-height: 17em;
+
+                        scrollbar-width: thin;
+                        scrollbar-color: #63A129 #f4f4f4;
+
+                        &::-webkit-scrollbar {
+                            width: 0.4em;
+                            height: 0.4em;
+                            margin: 0.9em 0;
+                            border-radius: 0.625em;
+                        }
+
+                        &::-webkit-scrollbar-track {
+                            background: #f4f4f4;
+                            /* color of the tracking area */
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            cursor: pointer;
+                            background-color: #63A129;
+                            border-radius: 0.625em;
+                            // border: 3px solid orange;
+                        }
+                    }
+
+                    &__option {
+                        padding: 0.6875em 0.9375em;
+                        cursor: pointer;
+                        border-radius: 0.5em;
+
+                        &:first-child {
+                            // border-radius: 0.9375em 0.9375em 0 0;
+                        }
+
+                        &:last-child {
+                            // border-radius: 0 0 0.9375em 0.9375em;
+                        }
+
+                        &--highlighted[aria-selected] {
+                            background-color: #70b033;
+                        }
+                    }
+                }
+
+                &-dropdown {
+                    position: absolute;
+                    // z-index: 150;
+                    font-weight: 400;
+                    font-size: 1em;
+                    // overflow: hidden;
+                    border: 0;
+                    padding: 0 0.3em;
+                    background-color: #F4F4F4;
+                    border-radius: 0.9375em;
+                    margin-top: 0.1875em;
+                    box-shadow: 0 0.25em 0.9375em rgba(#000, .1);
+                    border: 1px solid $input_border_color;
+
+                    &--below {
+                        border-radius: 0.9375em;
+                    }
+
+                    &--above {
+                        border-radius: 0.9375em;
+                    }
+                }
+
+                &-selection {
+                    background: #F5F5F5;
+                    border: 1px solid #F5F5F5;
+                    padding: 0.89em 0.9375em;
+                    outline: none;
+                    font-size: 1em;
+                    font-weight: 300;
+                    font-family: $main_font_family;
+                    border-radius: 0.625em;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        border: 1px solid lighten(#F5F5F5, 2%);
+                        background-color: lighten(#F5F5F5, 2%);
+                    }
+
+                    &:focus {
+                        border: 1px solid #F5F5F5;
+                        background-color: lighten(#F5F5F5, 7%);
+                    }
+
+                    &--single {
+                        border-radius: 0.625em;
+
+                        .select2 {
+                            &-selection {
+                                &__rendered {
+                                    padding: 0 3em 0 0;
+                                    line-height: 1.1;
+                                    font-weight: 400;
+                                    color: #728379;
+                                }
+
+                                &__placeholder {}
+
+                                &__arrow {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 2.7em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

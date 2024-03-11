@@ -1,0 +1,46 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	position: relative;
+	padding: 3.6875em 0 0;
+	color: rgba($color_withe, 0.4);
+	// background-color: #ddd;
+	background: url("img/footer.svg") top center no-repeat;
+	background-size: cover;
+
+	&__content {
+		@extend .container_center;
+
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+	}
+
+	&__nav {
+		flex-grow: 1;
+		max-width: 43.75em;
+	}
+
+	&__bottom {
+		color: rgba($color_withe, 0.4);
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		margin-top: 3.25em;
+		padding: 2em 0 2.3125em;
+
+		@media (min-width: 768px) {
+			margin-top: 4.25em;
+		}
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	a {
+		color: inherit;
+	}
+}

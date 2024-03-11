@@ -1,0 +1,93 @@
+/* Global variables */
+/* ======================================================================== */
+$main_font_family: Aeonik, sans-serif;
+$second_font_family: Aeonik, sans-serif;
+// $main_font_family: muli, sans-serif;
+// $second_font_family: muli, sans-serif;
+$main_color: #1E412C;
+$main_line_height: 1.2;
+$main_font_size: 16px;
+
+$container_width: 92.35em;
+
+$footer_height: auto;
+
+// Color collection for elements
+$color_primary: #17306A;
+$color_success: #DDC181;
+$color_info: #03a9f4;
+$color_warning: #BFA778;
+$color_danger: #FF3E00;
+$color_withe: #ffffff;
+
+$el-colors: (
+	primary: $color_primary, // color for .element__primary
+	success: $color_success, // color for .element__success
+	info: $color_info, // color for .element__info
+	warning: $color_warning, // color for .element__warning
+	danger: $color_danger, // color for .element__danger
+);
+
+/* Grid */
+/* ======================================================================== */
+$grid_padding: 20px;
+
+/* Form */
+/* ======================================================================== */
+// Input variables
+
+// Input color
+$input_color: $main_color;
+$input_bg_color: #FF3E00;
+$input_border_color: #C8C8C8;
+$input_placeholder_color: $main_color;
+
+// Input hover color
+$input_hover_color: #fff;
+$input_hover_bg_color: #fff;
+$input_hover_border_color: #ddd;
+$input_hover_placeholder_color: #ddd;
+
+// Input focus color
+$input_focus_color: #fff;
+$input_focus_bg_color: #fff;
+$input_focus_border_color: #ddd;
+$input_focus_placeholder_color: #ddd;
+
+// Input disabled color
+$input_disabled_color: #fff;
+$input_disabled_bg_color: #ccc;
+$input_disabled_border_color: #ccc;
+$input_disabled_placeholder_color: #fff;
+
+// Input error color
+$input_error_color: red;
+$input_error_bg_color: #fff;
+$input_error_border_color: red;
+$input_error_placeholder_color: red;
+
+/* Breakpoints */
+$breakpoint-small: 480px !default;
+$breakpoint-medium: 760px !default;
+$breakpoint-large: 960px !default;
+$breakpoint-xlarge: 1200px !default;
+
+$breakpoint-mini-max: ($breakpoint-small - 1) !default;
+$breakpoint-small-max: ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max: ($breakpoint-large - 1) !default;
+$breakpoint-large-max: ($breakpoint-xlarge - 1) !default;
+
+$icon_heart: "\e900";
+$icon_check-r: "\e901";
+$icon_trash: "\e902";
+$icon_cart: "\e903";
+$icon_close: "\e904";
+$icon_check: "\e905";
+$icon_arrow_back: "\e906";
+$icon_arrow: "\e907";
+$icon_heart_full: "\e908";
+$icon_minus: "\e909";
+$icon_plus: "\e90a";
+$icon_trangle_up: "\e90b";
+$icon_trangle: "\e90c";
+$icon_star: "\e90d";

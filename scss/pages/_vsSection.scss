@@ -1,0 +1,93 @@
+.vsSection {
+    color: $color_withe;
+
+    .section {
+        &__title {}
+
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        margin-top: 2em;
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 2.91em;
+        }
+    }
+
+    &__item {
+        margin-bottom: 3em;
+
+        @media (min-width: 768px) {
+            padding-right: 7.1875em;
+            max-width: 51%;
+            margin-bottom: -0.4em;
+        }
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        max-width: 22.99em;
+        min-height: 17.96em;
+        margin-bottom: 1.52em;
+
+        img {
+            display: block;
+            // object-fit: contain;
+            height: auto;
+            width: 100%;
+            // height: 100%;
+        }
+    }
+
+    &__text {
+        h3 {
+            font-weight: 400;
+            margin: 0 0 0.8em;
+            font-size: 2em;
+        }
+
+        p,
+        ul {
+            margin: 1.875em 0;
+            letter-spacing: 0.02em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 0.875em;
+
+                &::first-letter {
+                    display: inline-block;
+                    font-size: 1.8em;
+                    vertical-align: top;
+                    line-height: 0.7;
+                    margin-right: 0.5em;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+}

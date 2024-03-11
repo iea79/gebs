@@ -1,0 +1,135 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 1em 0;
+	z-index: 10;
+	position: relative;
+	background: #63A129;
+	// background-color: #ddd;
+
+	@media (min-width: 768px) {
+		padding: 1.4em 0;
+	}
+
+	.home & {
+		// position: absolute;
+		// width: 100%;
+	}
+
+	&__content {
+		@extend .container_center;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		@media (max-width: 767px) {
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		img {
+			width: 8.7em;
+
+			@media (min-width: 768px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__account {
+		@media (max-width: 767px) {
+			margin: 1em -1em;
+			padding: 2em 2em 0;
+			border-top: 1px solid $color_withe;
+
+			.btn {
+				width: 100%;
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	&__nav {
+
+		@media (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-grow: 1;
+			margin-left: 10.7em;
+			padding-bottom: 0.8em;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: 3em;
+		height: 3em;
+		border-radius: 50%;
+		margin-left: 1.2em;
+		background: rgba($color_withe, 0.1);
+		text-decoration: none;
+		color: $color_withe;
+
+		@media (min-width: 768px) {
+			width: 3.5625em;
+			height: 3.5625em;
+			margin-left: 0;
+			margin-right: 2.8125em;
+		}
+
+		i {
+			font-size: 1.1em;
+			line-height: 1;
+			margin-top: 0.1em;
+
+			@media (min-width: 768px) {
+				font-size: 1.5em;
+			}
+		}
+
+		&:hover {
+			background: rgba($color_withe, .25);
+		}
+	}
+
+	&__left {
+		// max-width: 25.25em;
+	}
+
+	&__right {
+		// max-width: 25.25em;
+		display: flex;
+		align-items: center;
+
+		@media (min-width: 768px) {
+			padding-bottom: 1em;
+		}
+	}
+
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.cartHeader__count,
+.wishlistHeader__count {
+	width: 0.8125em;
+	height: 0.8125em;
+	position: absolute;
+	right: 0.1875em;
+	top: 0.1875em;
+	border-radius: 50%;
+	background: #FFB800;
+}

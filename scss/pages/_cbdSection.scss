@@ -1,0 +1,104 @@
+.cbdSection {
+    &.section {
+        background-color: $color_withe;
+        z-index: 4;
+    }
+
+    .section {
+        &__title {
+            @media (min-width: 768px) {
+                margin-bottom: 1.26em;
+            }
+        }
+
+        &__sub {}
+
+    }
+
+    &__bg {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+            position: absolute;
+            top: -3.1875em;
+            left: 0;
+            width: 100%;
+            // z-index: -1;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__left {
+        flex: none;
+
+        @media (min-width: 768px) {
+            width: 50em;
+            margin-right: 3em;
+        }
+    }
+
+    &__list {
+        margin: 1.95em 0 0.1em;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                position: relative;
+                margin-bottom: 1.7em;
+                padding-left: 3.5em;
+
+                &:before {
+                    content: '';
+                    width: 2.3125em;
+                    height: 2.3125em;
+                    display: block;
+                    position: absolute;
+                    background: url("../img/cbd-check.svg") 0 0 no-repeat;
+                    background-size: contain;
+                    left: 0;
+                    top: -0.4em;
+                }
+            }
+        }
+    }
+
+    &__right {
+
+        @media (min-width: 768px) {
+            flex: none;
+            // margin-right: -3.2em;
+            padding-right: 2em;
+            margin-bottom: -1.2em;
+            width: 41.25em;
+        }
+
+        .lotti,
+        img {
+            display: block;
+            height: auto;
+
+            @media (max-width: 767px) {
+                width: 36.875em;
+            }
+        }
+    }
+}

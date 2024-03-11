@@ -1,0 +1,28 @@
+.woocommerceLoop {
+
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__aside {
+        margin-bottom: 1.5em;
+
+        @media (min-width: 768px) {
+            flex: none;
+            width: 20.8125em;
+            margin-right: 1.875em;
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        min-width: 0;
+        flex-grow: 1;
+        padding-top: 0.7em;
+
+        .added_to_cart {
+            display: none !important;
+        }
+    }
+}

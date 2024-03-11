@@ -1,0 +1,189 @@
+// Style for button and pseudo button for input and link
+$btn_default_bg_color: #70B033;
+$btn_default_text_color: $color_withe;
+$btn_contrast_text_color: $color_withe;
+$btn_default_bg_color_hover: #82C83E;
+
+.btn,
+.woocommerce .btn,
+.woocommerce .button,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce ul.products li.product .alt,
+.woocommerce ul.products li.product .button {
+	color: $btn_default_text_color;
+	font-family: $main_font_family;
+	font-size: 1em;
+	line-height: 1.1875em;
+	font-weight: 600;
+	padding: 1.1em 2em;
+	min-height: 3.625em;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $btn_default_bg_color;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	border-radius: 0.9375em;
+	transition: 0.4s;
+	transition-property: background, color, box-shadow;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	min-width: 8.875em;
+	box-shadow: none;
+	min-height: inherit;
+
+	i {
+		margin-right: 0.625em;
+		font-size: 1.1em;
+		transition: color 0.4s;
+	}
+
+	&_sm {
+		padding: 0.875em 1em;
+		min-width: 7em;
+	}
+
+	&:hover {
+		background-color: $btn_default_bg_color_hover;
+		color: $color_withe;
+		text-decoration: none;
+	}
+
+	&:active,
+	&:focus {
+		background-color: lighten($btn_default_bg_color, 7%);
+		color: $color_withe;
+	}
+
+	&_border {
+		border: 1px solid #70B033;
+		background-color: transparent;
+		color: #1E412C;
+
+		i {
+			color: #70B033;
+		}
+
+		&:hover {
+			border: 1px solid #82C83E;
+			color: $color_withe;
+			background: #82C83E;
+
+			i {
+				color: $color_withe;
+			}
+		}
+
+		&_white {
+			border: 1px solid #FFFFFF;
+			background-color: transparent;
+
+			&:hover {
+				color: #1E412C;
+				background-color: $color_withe;
+				box-shadow: 0 0 25px rgba(255, 255, 255, 0.35);
+			}
+		}
+	}
+
+	&_success {
+		color: #1E412C;
+		background: #FFB800;
+
+		&:hover {
+			color: #1E412C;
+			background: #FFC226;
+			box-shadow: 0 0 25px rgba(255, 184, 0, 0.45);
+		}
+	}
+
+	&_border {}
+
+	&.add_to_cart_button {
+		padding: 0.8em 1em;
+	}
+
+	&.add_to_cart_button,
+	&.single_add_to_cart_button {
+		&:before {
+			font-family: 'gebs';
+			content: $icon_cart;
+			font-weight: 400;
+			margin-right: 0.625em;
+			font-size: 1.1em;
+			transition: color 0.4s;
+		}
+
+		&.added {
+			background: #F1F7EB;
+			color: #70B033;
+			min-width: 7em;
+
+			&:before {
+				content: $icon_check_r;
+			}
+
+			&:after {
+				display: none !important;
+			}
+		}
+	}
+
+	&.single_add_to_cart_button {
+		background-color: $btn_default_bg_color;
+
+		&:hover {
+			background-color: $btn_default_bg_color_hover;
+			color: $color_withe;
+			text-decoration: none;
+		}
+
+		&:active,
+		&:focus {
+			background-color: lighten($btn_default_bg_color, 7%);
+			color: $color_withe;
+		}
+	}
+
+	&_muted {
+		background: #F1F7EB;
+		color: #70B033;
+
+		&:hover {
+			background: #82C83E;
+			color: $color_withe;
+		}
+
+		&:active,
+		&:focus {
+			background-color: lighten(#82C83E, 7%);
+			color: $color_withe;
+		}
+	}
+
+	&[name="apply_coupon"] {
+		border: 1px solid #70B033;
+		background-color: transparent;
+		color: #1E412C;
+
+		i {
+			color: #70B033;
+		}
+
+		&:hover {
+			border: 1px solid #82C83E;
+			color: $color_withe;
+			background: #82C83E;
+
+			i {
+				color: $color_withe;
+			}
+		}
+	}
+}

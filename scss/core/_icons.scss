@@ -1,0 +1,111 @@
+@import "../variables/variables";
+$icomoon-font-family: "gebs" !default;
+$icomoon-font-path: "/wp-content/themes/gebs/fonts" !default;
+
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1qjs9x") format('truetype'), url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1qjs9x") format('woff'), url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1qjs9x##{$icomoon-font-family}") format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon_"],
+[class*=" icon_"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_heart {
+    &:before {
+        content: $icon_heart;
+    }
+}
+
+.icon_check_r {
+    &:before {
+        content: $icon_check-r;
+    }
+}
+
+.icon_trash {
+    &:before {
+        content: $icon_trash;
+    }
+}
+
+.icon_cart {
+    &:before {
+        content: $icon_cart;
+    }
+}
+
+.icon_close {
+    &:before {
+        content: $icon_close;
+    }
+}
+
+.icon_check {
+    &:before {
+        content: $icon_check;
+    }
+}
+
+.icon_arrow_back {
+    &:before {
+        content: $icon_arrow_back;
+    }
+}
+
+.icon_arrow {
+    &:before {
+        content: $icon_arrow;
+    }
+}
+
+.icon_heart_full {
+    &:before {
+        content: $icon_heart_full;
+    }
+}
+
+.icon_minus {
+    &:before {
+        content: $icon_minus;
+    }
+}
+
+.icon_plus {
+    &:before {
+        content: $icon_plus;
+    }
+}
+
+.icon_trangle_up {
+    &:before {
+        content: $icon_trangle_up;
+    }
+}
+
+.icon_trangle {
+    &:before {
+        content: $icon_trangle;
+    }
+}
+
+.icon_star {
+    &:before {
+        content: $icon_star;
+    }
+}
